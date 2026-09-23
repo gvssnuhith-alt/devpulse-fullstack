@@ -1,0 +1,22 @@
+{
+  "name": "devpulse-workspace",
+  "version": "1.0.0",
+  "description": "DevPulse - Real-time Project & Incident Management Dashboard",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build",
+    "test:server": "cd server && npm test"
+  },
+  "keywords": [
+    "fullstack",
+    "react",
+    "nodejs",
+    "express",
+    "typescript",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT"
+}

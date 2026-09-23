@@ -1,0 +1,263 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "DevPulse Admin",
+      "email": "admin@devpulse.io",
+      "password": "1b9b975d560765813e2afa3d02018f56:d674dd0eed449e0ff03d81ff5410aa124ed8f0dc9184b1161ca65657c4c1a3a970721d101f358aa82bf3f45917df44bb2e2259ca7f68da5e26cfd417f04f0c5f",
+      "role": "admin",
+      "createdAt": "2026-09-23T04:17:41.368Z"
+    },
+    {
+      "id": "usr-1790137061933",
+      "name": "Tester User",
+      "email": "tester-1790137061430@devpulse.io",
+      "password": "165d92e0c66c54ce8a882acbdf9c5eb0:cdd4f612724f9615eed3b90671adebe6aec151258394113c6585d388b21246e8fedc0f5b15f8572b9a04aa39f81cc23d4633d85d2a9bef996ad3eda87f82245c",
+      "role": "developer",
+      "createdAt": "2026-09-23T04:17:41.997Z"
+    },
+    {
+      "id": "usr-1790137068039",
+      "name": "Tester User",
+      "email": "tester-1790137068025@devpulse.io",
+      "password": "ccd5bd9b609f48f5daa00a3ddfec88cc:e2939493451a76f3dbbdcab70c053d200a568ad9b9cca133af8b5364a790d4b523ecbd10583824cecea3ccf3f6d3d66c6843f4d90f1bacb890b09656dae530b8",
+      "role": "developer",
+      "createdAt": "2026-09-23T04:17:48.114Z"
+    },
+    {
+      "id": "usr-1790137159029",
+      "name": "Tester User",
+      "email": "tester-1790137159015@devpulse.io",
+      "password": "78d8e1407ea4715710c7612c76712e52:9e3a51810403025f272da8565de04e0ed3d4d45468198ffa57dd3bf7534008f18d7c9ebaeaeb76796f7e073c4264d1bfcb7d7aea6eeeb21432cd5d896ab928bc",
+      "role": "developer",
+      "createdAt": "2026-09-23T04:19:19.084Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-001",
+      "title": "Migrate auth service to JWT stateless tokens",
+      "description": "Replace legacy session cookies with signed HS256 JWT tokens for API gateway compat.",
+      "status": "completed",
+      "priority": "high",
+      "assignedTo": "alex.chen@devpulse.io",
+      "createdAt": "2026-09-18T10:00:00.000Z",
+      "updatedAt": "2026-09-19T14:30:00.000Z"
+    },
+    {
+      "id": "tsk-002",
+      "title": "Investigate Redis cache eviction spikes on cluster-us-east",
+      "description": "Memory usage exceeding 85% high watermark during 09:00 UTC batch job cycles.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignedTo": "sarah.k@devpulse.io",
+      "createdAt": "2026-09-20T08:15:00.000Z",
+      "updatedAt": "2026-09-22T11:00:00.000Z"
+    },
+    {
+      "id": "tsk-003",
+      "title": "Implement rate limiting on /api/v1/auth/login",
+      "description": "Enforce 5 attempts per IP per 15 minute sliding window to mitigate credential stuffing.",
+      "status": "todo",
+      "priority": "high",
+      "assignedTo": "alex.chen@devpulse.io",
+      "createdAt": "2026-09-21T09:30:00.000Z",
+      "updatedAt": "2026-09-21T09:30:00.000Z"
+    },
+    {
+      "id": "tsk-004",
+      "title": "Optimize Postgres query latency on audit_logs table",
+      "description": "Add composite B-tree index on (tenant_id, created_at DESC) to speed up compliance exporter.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignedTo": "marcus.v@devpulse.io",
+      "createdAt": "2026-09-21T11:45:00.000Z",
+      "updatedAt": "2026-09-22T16:20:00.000Z"
+    },
+    {
+      "id": "tsk-005",
+      "title": "Deploy Prometheus Blackbox exporter for edge probe checks",
+      "description": "Monitor DNS resolution, TLS handshake latencies, and HTTP response codes across 4 regions.",
+      "status": "completed",
+      "priority": "medium",
+      "assignedTo": "elena.r@devpulse.io",
+      "createdAt": "2026-09-17T13:00:00.000Z",
+      "updatedAt": "2026-09-20T17:10:00.000Z"
+    },
+    {
+      "id": "tsk-006",
+      "title": "Fix race condition in webhooks retry worker queue",
+      "description": "Exponential backoff schedule drops message acknowledgements when pod gracefully terminates.",
+      "status": "todo",
+      "priority": "high",
+      "assignedTo": "sarah.k@devpulse.io",
+      "createdAt": "2026-09-22T10:00:00.000Z",
+      "updatedAt": "2026-09-22T10:00:00.000Z"
+    },
+    {
+      "id": "tsk-007",
+      "title": "Update Docker base images to Node 22-alpine",
+      "description": "Resolve CVE-2026-2189 and CVE-2026-2190 by bumping base images across all microservices.",
+      "status": "completed",
+      "priority": "low",
+      "assignedTo": "elena.r@devpulse.io",
+      "createdAt": "2026-09-15T09:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "tsk-008",
+      "title": "Draft incident post-mortem for INC-2026-09-14 outage",
+      "description": "Root cause analysis on ingress controller crashloop backoff following Helm rollback.",
+      "status": "todo",
+      "priority": "medium",
+      "assignedTo": "marcus.v@devpulse.io",
+      "createdAt": "2026-09-22T14:30:00.000Z",
+      "updatedAt": "2026-09-22T14:30:00.000Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "act-1790137159256-nbxo1",
+      "action": "DELETE",
+      "entity": "task",
+      "entityId": "tsk-1790137159222",
+      "details": "Deleted task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137159015@devpulse.io",
+      "timestamp": "2026-09-23T04:19:19.256Z"
+    },
+    {
+      "id": "act-1790137159239-o5zu5",
+      "action": "UPDATE",
+      "entity": "task",
+      "entityId": "tsk-1790137159222",
+      "details": "Updated task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137159015@devpulse.io",
+      "timestamp": "2026-09-23T04:19:19.239Z"
+    },
+    {
+      "id": "act-1790137159223-dnii9",
+      "action": "CREATE",
+      "entity": "task",
+      "entityId": "tsk-1790137159222",
+      "details": "Created task \"Automated test task creation\" [high/in_progress]",
+      "user": "tester-1790137159015@devpulse.io",
+      "timestamp": "2026-09-23T04:19:19.223Z"
+    },
+    {
+      "id": "act-1790137159153-i0r1l",
+      "action": "LOGIN",
+      "entity": "user",
+      "entityId": "usr-admin",
+      "details": "User logged in: admin@devpulse.io",
+      "user": "admin@devpulse.io",
+      "timestamp": "2026-09-23T04:19:19.153Z"
+    },
+    {
+      "id": "act-1790137159085-2jxoq",
+      "action": "REGISTER",
+      "entity": "user",
+      "entityId": "usr-1790137159029",
+      "details": "User registered: tester-1790137159015@devpulse.io",
+      "user": "tester-1790137159015@devpulse.io",
+      "timestamp": "2026-09-23T04:19:19.085Z"
+    },
+    {
+      "id": "act-1790137068323-2c9b6",
+      "action": "DELETE",
+      "entity": "task",
+      "entityId": "tsk-1790137068262",
+      "details": "Deleted task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137068025@devpulse.io",
+      "timestamp": "2026-09-23T04:17:48.323Z"
+    },
+    {
+      "id": "act-1790137068279-odp8q",
+      "action": "UPDATE",
+      "entity": "task",
+      "entityId": "tsk-1790137068262",
+      "details": "Updated task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137068025@devpulse.io",
+      "timestamp": "2026-09-23T04:17:48.279Z"
+    },
+    {
+      "id": "act-1790137068263-pmijq",
+      "action": "CREATE",
+      "entity": "task",
+      "entityId": "tsk-1790137068262",
+      "details": "Created task \"Automated test task creation\" [high/in_progress]",
+      "user": "tester-1790137068025@devpulse.io",
+      "timestamp": "2026-09-23T04:17:48.263Z"
+    },
+    {
+      "id": "act-1790137068224-rvmyz",
+      "action": "LOGIN",
+      "entity": "user",
+      "entityId": "usr-admin",
+      "details": "User logged in: admin@devpulse.io",
+      "user": "admin@devpulse.io",
+      "timestamp": "2026-09-23T04:17:48.224Z"
+    },
+    {
+      "id": "act-1790137068116-83c2i",
+      "action": "REGISTER",
+      "entity": "user",
+      "entityId": "usr-1790137068039",
+      "details": "User registered: tester-1790137068025@devpulse.io",
+      "user": "tester-1790137068025@devpulse.io",
+      "timestamp": "2026-09-23T04:17:48.116Z"
+    },
+    {
+      "id": "act-1790137062193-a4yba",
+      "action": "DELETE",
+      "entity": "task",
+      "entityId": "tsk-1790137062130",
+      "details": "Deleted task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137061430@devpulse.io",
+      "timestamp": "2026-09-23T04:17:42.193Z"
+    },
+    {
+      "id": "act-1790137062162-sjxcu",
+      "action": "UPDATE",
+      "entity": "task",
+      "entityId": "tsk-1790137062130",
+      "details": "Updated task \"Automated test task creation - Verified\"",
+      "user": "tester-1790137061430@devpulse.io",
+      "timestamp": "2026-09-23T04:17:42.162Z"
+    },
+    {
+      "id": "act-1790137062145-kzeiu",
+      "action": "CREATE",
+      "entity": "task",
+      "entityId": "tsk-1790137062130",
+      "details": "Created task \"Automated test task creation\" [high/in_progress]",
+      "user": "tester-1790137061430@devpulse.io",
+      "timestamp": "2026-09-23T04:17:42.145Z"
+    },
+    {
+      "id": "act-1790137062068-6qeec",
+      "action": "LOGIN",
+      "entity": "user",
+      "entityId": "usr-admin",
+      "details": "User logged in: admin@devpulse.io",
+      "user": "admin@devpulse.io",
+      "timestamp": "2026-09-23T04:17:42.068Z"
+    },
+    {
+      "id": "act-1790137061998-yqafq",
+      "action": "REGISTER",
+      "entity": "user",
+      "entityId": "usr-1790137061933",
+      "details": "User registered: tester-1790137061430@devpulse.io",
+      "user": "tester-1790137061430@devpulse.io",
+      "timestamp": "2026-09-23T04:17:41.998Z"
+    },
+    {
+      "id": "act-init",
+      "action": "SEED",
+      "entity": "task",
+      "details": "Initialized DevPulse database with 8 core engineering tasks",
+      "user": "system",
+      "timestamp": "2026-09-23T04:17:41.369Z"
+    }
+  ]
+}
