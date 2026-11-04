@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "DevPulse Admin",
+      "email": "admin@devpulse.io",
+      "password": "aa39553c82d4db0a881d5ce4333ee0ce:8a4333eba38e160296816e2a96dbb38207cd09ccd7286e953d6b784938ab90989e00ccf3f3612fd04c4bea22480a858e69c5aa85327a2abd87b77cd8f11c9006",
+      "role": "admin",
+      "createdAt": "2026-09-23T04:21:10.072Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-001",
+      "title": "Migrate auth service to JWT stateless tokens",
+      "description": "Replace legacy session cookies with signed HS256 JWT tokens for API gateway compat.",
+      "status": "completed",
+      "priority": "high",
+      "assignedTo": "alex.chen@devpulse.io",
+      "createdAt": "2026-09-18T10:00:00.000Z",
+      "updatedAt": "2026-09-19T14:30:00.000Z"
+    },
+    {
+      "id": "tsk-002",
+      "title": "Investigate Redis cache eviction spikes on cluster-us-east",
+      "description": "Memory usage exceeding 85% high watermark during 09:00 UTC batch job cycles.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignedTo": "sarah.k@devpulse.io",
+      "createdAt": "2026-09-20T08:15:00.000Z",
+      "updatedAt": "2026-09-22T11:00:00.000Z"
+    },
+    {
+      "id": "tsk-003",
+      "title": "Implement rate limiting on /api/v1/auth/login",
+      "description": "Enforce 5 attempts per IP per 15 minute sliding window to mitigate credential stuffing.",
+      "status": "todo",
+      "priority": "high",
+      "assignedTo": "alex.chen@devpulse.io",
+      "createdAt": "2026-09-21T09:30:00.000Z",
+      "updatedAt": "2026-09-21T09:30:00.000Z"
+    },
+    {
+      "id": "tsk-004",
+      "title": "Optimize Postgres query latency on audit_logs table",
+      "description": "Add composite B-tree index on (tenant_id, created_at DESC) to speed up compliance exporter.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignedTo": "marcus.v@devpulse.io",
+      "createdAt": "2026-09-21T11:45:00.000Z",
+      "updatedAt": "2026-09-22T16:20:00.000Z"
+    },
+    {
+      "id": "tsk-005",
+      "title": "Deploy Prometheus Blackbox exporter for edge probe checks",
+      "description": "Monitor DNS resolution, TLS handshake latencies, and HTTP response codes across 4 regions.",
+      "status": "completed",
+      "priority": "medium",
+      "assignedTo": "elena.r@devpulse.io",
+      "createdAt": "2026-09-17T13:00:00.000Z",
+      "updatedAt": "2026-09-20T17:10:00.000Z"
+    },
+    {
+      "id": "tsk-006",
+      "title": "Fix race condition in webhooks retry worker queue",
+      "description": "Exponential backoff schedule drops message acknowledgements when pod gracefully terminates.",
+      "status": "todo",
+      "priority": "high",
+      "assignedTo": "sarah.k@devpulse.io",
+      "createdAt": "2026-09-22T10:00:00.000Z",
+      "updatedAt": "2026-09-22T10:00:00.000Z"
+    },
+    {
+      "id": "tsk-007",
+      "title": "Update Docker base images to Node 22-alpine",
+      "description": "Resolve CVE-2026-2189 and CVE-2026-2190 by bumping base images across all microservices.",
+      "status": "completed",
+      "priority": "low",
+      "assignedTo": "elena.r@devpulse.io",
+      "createdAt": "2026-09-15T09:00:00.000Z",
+      "updatedAt": "2026-09-16T12:00:00.000Z"
+    },
+    {
+      "id": "tsk-008",
+      "title": "Draft incident post-mortem for INC-2026-09-14 outage",
+      "description": "Root cause analysis on ingress controller crashloop backoff following Helm rollback.",
+      "status": "todo",
+      "priority": "medium",
+      "assignedTo": "marcus.v@devpulse.io",
+      "createdAt": "2026-09-22T14:30:00.000Z",
+      "updatedAt": "2026-09-22T14:30:00.000Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "act-init",
+      "action": "SEED",
+      "entity": "task",
+      "details": "Initialized DevPulse database with 8 core engineering tasks",
+      "user": "system",
+      "timestamp": "2026-09-23T04:21:10.073Z"
+    }
+  ]
+}
